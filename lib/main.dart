@@ -1,6 +1,6 @@
-// ignore_for_file: use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_constructors, equal_keys_in_map
+// ignore_for_file: use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_constructors, equal_keys_in_map, unused_import
 
-import 'package:flutter/foundation.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:new_demo/pages/home_page.dart';
 import 'package:new_demo/pages/login_page.dart';
@@ -14,11 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      initialRoute: "/home",
+      initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
         "/home": (context) => HomePage(),
