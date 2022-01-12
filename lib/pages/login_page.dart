@@ -1,10 +1,8 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -12,7 +10,7 @@ class LoginPage extends StatelessWidget {
         child: Text(
           "Login Page",
           style: TextStyle(
-            fontSize: 30,
+            fontSize: 25,
             color: Colors.blue,
             fontWeight: FontWeight.bold,
           ),
